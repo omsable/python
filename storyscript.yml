@@ -1,0 +1,17 @@
+entrypoint:
+  help: 'Execute a Python file.'
+  args:
+    - type: file
+      required: true
+      help: 'Path to the Python file to execute.'
+    - type: *
+      many: true
+      help: 'Pass any number of arguments to the file being exected.'
+  result:
+    type: *
+
+volume: true
+
+alias:
+  - py
+  - python
