@@ -6,12 +6,13 @@ Execute a python file with arguments.
 
 ```py
 import sys
-print('Hello ' + sys.argv[1] + sys.argv[2])
+print('Hello {} {}'.format(sys.argv[1], sys.argv[2]))
 ```
 > The file above is checked into your repository at the path /print.py
 
 ```storyscript
-result = python "priny.py" "foo" "bar"
+# Storyscript
+result = python `print.py` "foo" "bar"
 ```
 
 > The variable `result` would equal `"Hello foobar"`
