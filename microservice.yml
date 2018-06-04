@@ -1,0 +1,11 @@
+entrypoint:
+  help: Execute a Python file.
+  arguments:
+    path:
+      type: string
+      required: true
+      help: Path to the Python file to execute.
+
+volumes:
+  py:
+    target: /data
